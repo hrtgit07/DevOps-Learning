@@ -1,0 +1,66 @@
+##########MAX###############
+
+number = [3, 2, 8, 5, 10, 6]
+largest_number = max(number);
+
+print("The largest number is:", largest_number)
+
+
+###########################################
+
+languages = ["Python", "C Programming", "Java", "JavaScript"]
+largest_string = max(languages);
+
+print("The largest string is:", largest_string)
+
+
+##############################################
+
+square = {2: 4, -3: 9, -1: 1, -2: 4}
+
+# the largest key
+key1 = max(square)
+print("The largest key:", key1)    # 2
+
+# the key whose value is the largest
+key2 = max(square, key = lambda k: square[k])
+
+print("The key with the largest value:", key2)    # -3
+
+# getting the largest value
+print("The largest value:", square[key2])    # 9
+
+
+####################file handling##################
+
+f = open("program.txt")
+
+f = open("program.txt", "rt")
+
+
+
+f = open("program.txt", "r")
+print(f.read())
+
+
+f = open("program.txt", "r")
+print(f.readline())
+
+
+###########################string manipulation#######################
+
+#Accessing string characters in Python
+str = 'programiz'
+print('str = ', str)
+
+#first character
+print('str[0] = ', str[0])
+
+#last character
+print('str[-1] = ', str[-1])
+
+#slicing 2nd to 5th character
+print('str[1:5] = ', str[1:5])
+
+#slicing 6th to 2nd last character
+print('str[5:-2] = ', str[5:-2])
